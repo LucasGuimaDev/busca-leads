@@ -5,7 +5,8 @@ import os
 from unidecode import unidecode
 
 ### mudar o caminho da pasta que contém os arquivos excel
-pasta = r'C:\Users\sonia\Desktop\Lucas Geral\lojas_de_carros\arquivos_xlsx'
+
+pasta =  '''caminho da pasta com os arquivos em excel'''
 
 arquivos = os.listdir(pasta)
 
@@ -60,6 +61,6 @@ for arquivo in arquivos_xlsx:
     arquivo = arquivo.replace('.xlsx', '')
     
     ### mudar o caminho do aquivo da pasta dos arquivos csv abaixo
-    df.to_csv(f'C:/Users/sonia/Desktop/Lucas Geral/lojas_de_carros/arquivos_csv/{arquivo}.csv', index=False, encoding='utf-8', sep=';')
+    df.to_csv(f'-----caminho da pasta com os arquivos csv-----/{arquivo}.csv', index=False, encoding='utf-8', sep=';')
   
     print(f"Dados do arquivo {arquivo}:")
