@@ -3,7 +3,7 @@
 - Pandas
 - re
 - os
-- unideciode
+- unidecode
 
 ### Projeto
 
@@ -29,4 +29,4 @@ Após coletar os dados ele mostra a seguinte mensagem, então basta salvar o arq
 
 ![Imagem4](https://github.com/LucasGuimaDev/busca-leads/assets/123521555/013234f5-8d60-4219-b07e-491ec552d360)
 
-Após a coleta jogue o arquivo na pasta de arquivos xlsx e rode o código para extrair os dados em csv. 
+Após a coleta jogue o arquivo na pasta de arquivos arquivos_xlsx e rode o código para extrair os dados em csv. 
