@@ -12,6 +12,8 @@ arquivos = os.listdir(pasta)
 
 arquivos_xlsx = [arquivo for arquivo in arquivos if arquivo.endswith('.xlsx')]
 
+# o código abaixo itera sobre os arquivps da pasta e realiza o tratamento um por vez
+
 for arquivo in arquivos_xlsx:
     
     caminho_arquivo = os.path.join(pasta, arquivo)
@@ -44,6 +46,8 @@ for arquivo in arquivos_xlsx:
     df['ramo'] = df['ramo'].apply(lambda x: unidecode(x)).str.lower()
 
 
+    # identifica se o numero de telefone é um numero de telefone válido
+    
     padrao_telefone = re.compile(r'(?:(?:\+?([1-9]{2}))? ?(?:\(?([1-9][0-9])\)? ?)?(?:([2-8]|9[1-9])[0-9]{3})-?([0-9]{4}))')
 
     def extrair_telefone(texto):
